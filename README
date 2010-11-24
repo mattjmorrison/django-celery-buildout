@@ -4,7 +4,6 @@ Buildout - Dependency Management - http://www.buildout.org/
 Django - Web Framework - http://www.djangoproject.com
 Celery - Asynchronous Task Queue - http://ask.github.com/celery/
 
-
 The sample Blog application has a sample Celery task defined that will print a message every minute.
 
 To start the task queue run the following command:
