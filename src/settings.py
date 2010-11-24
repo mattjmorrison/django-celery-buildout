@@ -9,8 +9,6 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-CARROT_BACKEND = "ghettoq.taproot.Database"  
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -94,11 +92,12 @@ INSTALLED_APPS = (
 	'blog',
 )
 
-#BROKER_HOST = "127.0.0.1"
-#BROKER_PORT = 5672
-#BROKER_VHOST = "/"
-#BROKER_USER = "user"
-#BROKER_PASSWORD = "password"
+#CARROT_BACKEND = "ghettoq.taproot.Database"  
+AMQP_SERVER = "127.0.0.1"
+AMQP_PORT = 5672
+AMQP_USER = "user"
+AMQP_PASSWORD = "password"
+AMQP_VHOST = "vhost"
 
 import djcelery
 djcelery.setup_loader()

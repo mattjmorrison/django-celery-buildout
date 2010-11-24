@@ -14,4 +14,4 @@ class MyTask(Task):
 		sample_file.write(some_arg)
 		logger.info("Did something: %s" % some_arg)
 
-@tasks.register(MyTask)
+tasks.register(MyTask)
