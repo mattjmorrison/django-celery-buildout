@@ -94,5 +94,11 @@ INSTALLED_APPS = (
 	'blog',
 )
 
+#BROKER_HOST = "127.0.0.1"
+#BROKER_PORT = 5672
+#BROKER_VHOST = "/"
+#BROKER_USER = "user"
+#BROKER_PASSWORD = "password"
+
 import djcelery
 djcelery.setup_loader()
