@@ -15,6 +15,5 @@ setup(
 		'celery',
 		'django-celery',
 		'ghettoq',
-		
     ),
 )
