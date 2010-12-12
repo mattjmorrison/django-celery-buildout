@@ -92,15 +92,11 @@ INSTALLED_APPS = (
 	'blog',
 )
 
-#Comment out this line to use rabbigtmq
-CARROT_BACKEND = "ghettoq.taproot.Database"  
-
-#uncomment the following lines to use rabbitmq
-#AMQP_SERVER = "127.0.0.1"
-#AMQP_PORT = 5672
-#AMQP_USER = "user"
-#AMQP_PASSWORD = "password"
-#AMQP_VHOST = "vhost"
+AMQP_SERVER = "127.0.0.1"
+AMQP_PORT = 5672
+AMQP_USER = "myuser"
+AMQP_PASSWORD = "mypassword"
+AMQP_VHOST = "myvhost"
 
 import djcelery
 djcelery.setup_loader()
